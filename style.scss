@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Poppins", sans-serif ;
+    min-height: 100vh;
+    background-color: #798DFF;
+   
+}
+header{
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    i{
+        font-size: 2.5rem ;
+        position: absolute;
+        right: 0.4rem;
+        color: #798DFF;
+        cursor: pointer;
+    }
+    
+    input{
+        position: relative;
+        background-color: #17D2EB;
+        border: 0;
+        min-width: 40rem;
+        padding: 0.5rem;
+        padding-left: 1rem;
+        font-size: 1.5rem;
+    }
+}
+main{
+    padding-top: 5rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    .task-bar{
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        padding-left:1rem;
+        min-width: 40rem;
+        margin-bottom: 0.5rem;
+        background-color: #17D2EB
+        
+    }
+    button{
+        padding: 0.5rem;
+        margin: 0.1rem;
+        height: 100%;
+        cursor: pointer;
+        border: 0;
+        font-size: 1.5rem;
+        align-items: center;
+        color:#82FFDD ;
+        background-color: #1990FF;
+        
+        
+    }
+    .fa-trash{
+        color: #82FFDD !important;
+    }
+    button:active{
+        transform: translateY(2px);
+    }
+}
+
+.checked{
+    text-decoration: line-through;
+    opacity: 50%;
+}
+.fall{
+    
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+    
+   
+
+}
+
+h1{
+    color:#333;
+    margin-bottom: 1rem;
+}
+.wrapper{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+}
